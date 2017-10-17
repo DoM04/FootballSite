@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  next_opponent: MyString
+  venue: MyString
+  last_opponent: MyString
+  result: MyString
+  table_position: 1
+  team_members: 1
+
+two:
+  name: MyString
+  next_opponent: MyString
+  venue: MyString
+  last_opponent: MyString
+  result: MyString
+  table_position: 1
+  team_members: 1
