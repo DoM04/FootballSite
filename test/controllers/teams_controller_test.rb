@@ -18,7 +18,7 @@ class TeamsControllerTest < ActionController::TestCase
 
   test "should create team" do
     assert_difference('Team.count') do
-      post :create, team: { last_opponent: @team.last_opponent, name: @team.name, next_opponent: @team.next_opponent, result: @team.result, table_position: @team.table_position, team_members: @team.team_members, venue: @team.venue }
+      post :create, team: { last_opponent: @team.last_opponent, name: "Ballyraine FC", next_opponent: @team.next_opponent, result: @team.result, table_position: @team.table_position, team_members: @team.team_members, venue: @team.venue }
     end
 
     assert_redirected_to team_path(assigns(:team))

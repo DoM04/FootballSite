@@ -7,13 +7,13 @@ one:
   last_opponent: MyString
   result: MyString
   table_position: 1
-  team_members: 1
+  team_members: 12
 
 two:
-  name: MyString
+  name: MyString2
   next_opponent: MyString
   venue: MyString
   last_opponent: MyString
   result: MyString
-  table_position: 1
-  team_members: 1
+  table_position: 2
+  team_members: 13
