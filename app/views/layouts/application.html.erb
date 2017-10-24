@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FootballSite</title>
+  <title>Sunday League Football</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div id="banner">
+  <%= image_tag("logo.png") %>
+  <%= @page_title || "Sunday League" %>
+</div>
 <%= yield %>
 
 </body>
