@@ -3,11 +3,11 @@
 <% end %>
 
 <h1>Sunday League Table</h1>
+
 <h3>Postion   Team Name</h3>
 <% @teams.each do |team| %>
 	<div class="entry">
 	  <%= team.table_position %>	
-	  <%= team.name %>
-	  <%= team.team_members %>	
+	  <%=       team.name %>
   </div>
 <% end %>
