@@ -1,13 +1,25 @@
 <% if notice %>
   <p id="notice"><%= notice %></p>
 <% end %>
-
 <h1>Sunday League Table</h1>
 
-<h3>Postion   Team Name</h3>
-<% @teams.each do |team| %>
-	<div class="entry">
-	  <%= team.table_position %>	
-	  <%=       team.name %>
-  </div>
+<table>
+
+<thead>
+	<tr>
+		<th>Postion</th>
+		<th>Team Name</th>
+		<th colspan="8"></th>
+	</tr>
+</thead>
+
+<tbody>
+
+	<% @teams.each do |team| %>
+		<tr>
+		  <td><%= team.table_position %></td>	
+		  <td><%= team.name %></td>
+		</tr>
 <% end %>
+</tbody>
+</table>

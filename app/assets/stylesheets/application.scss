@@ -62,15 +62,20 @@
   background-color: #f0f0f0;
   font: bold smaller sans-serif;
 }
-h3 {
-  font: 150% sans-serif;
+h1 {
+  font: 250% sans-serif;
   margin-top: 0;
-  margin-bottom: 2px;
-  color: #227;
+  margin-bottom: 50px;
 }
-.entry{
-  font: 150% sans-serif;
+th{
+  padding: 15px;
+  font: 200% sans-serif;
   margin-top: 1em;
-  border-bottom: 1px dotted #77d;
-  min-height: 100px;
+  border-bottom: 2px solid;
+  min-height: 10px;
+  text-align: left;
+}
+td{
+  font-size: 200%;
+  margin_top: 1em;
 }
