@@ -1,16 +1,15 @@
-<p id="notice"><%= notice %></p>
-
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
 <h1>Listing Teams</h1>
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
-      <th>Next opponent</th>
       <th>Venue</th>
-      <th>Last opponent</th>
-      <th>Result</th>
-      <th>Table position</th>
+      <th>Wins</th>
+      <th>Losses</th>
       <th>Team members</th>
       <th colspan="3"></th>
     </tr>
@@ -20,11 +19,9 @@
     <% @teams.each do |team| %>
       <tr>
         <td><%= team.name %></td>
-        <td><%= team.next_opponent %></td>
         <td><%= team.venue %></td>
-        <td><%= team.last_opponent %></td>
-        <td><%= team.result %></td>
-        <td><%= team.table_position %></td>
+        <td><%= team.wins %></td>
+	<td><%= team.losses %></td>
         <td><%= team.team_members %></td>
         <td><%= link_to 'Show', team %></td>
         <td><%= link_to 'Edit', edit_team_path(team) %></td>

@@ -1,7 +1,7 @@
 <% if notice %>
   <p id="notice"><%= notice %></p>
 <% end %>
-<h1>Sunday League Table</h1>
+<h1><b>Sunday League Table</b></h1>
 
 <table>
 
@@ -9,16 +9,17 @@
 	<tr>
 		<th>Postion</th>
 		<th>Team Name</th>
+		<th>Points</th>
 		<th colspan="8"></th>
 	</tr>
 </thead>
 
 <tbody>
-
-	<% @teams.each do |team| %>
+	<% @teams.order("losses").each_with_index do |team, index| %>
 		<tr>
-		  <td><%= team.table_position %></td>	
+		  <td><%= index+1 %></td>	  	
 		  <td><%= team.name %></td>
+		  <td><%= team.points %></td>
 		</tr>
 <% end %>
 </tbody>
